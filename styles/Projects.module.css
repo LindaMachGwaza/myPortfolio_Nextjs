@@ -1,0 +1,23 @@
+/*Projects elements styled*/
+.card {
+  width: 30rem;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.project {
+  text-align: left;
+  padding-bottom: 40px;
+  font-weight: 300;
+  
+}
+.project h1 {
+  color: aquamarine;
+}
+.card-title h5{
+  color: aquamarine;
+}
+
+
+/*Sources used include Hyperiondev notes, previous tasks, Geeksforgeeks, W3Schools, Alvarotrigo.com, You Tube, Google.com*/

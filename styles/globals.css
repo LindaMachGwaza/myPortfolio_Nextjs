@@ -1,0 +1,189 @@
+/*Imported google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,600;1,800&display=swap');
+/*Body background color and font set*/
+body {
+  background: rgba(3, 2, 39, 0.84);
+  margin: 0;
+  font-family:'Poppins', sans-serif;
+}
+/*Links styled and removed default colour and underline*/  
+a {
+  color: rgb(253, 253, 254);
+  text-decoration: none;
+  font-size: 25px;
+}
+/*Div where content is displayed given a width*/
+.content{
+  max-width: 960px;
+  margin:  0 auto;
+  
+}
+/*Nav items displayed next to each other with space in between*/
+nav{
+  margin: 10px auto 80px;
+  padding: auto 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+nav a{
+  margin-left: 25px;
+  border-bottom: 1px solid rgb(255, 127, 253);
+  
+}
+/*On hover of nav items color customised*/
+nav a:hover {
+  color: aquamarine;
+}
+/*Nav logo styled and customised*/
+nav .logo{
+  margin-right: auto;
+  color: rgb(248, 251, 251);
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*Gave an underline on the portfolio title*/
+nav p {
+  border-bottom: 1px solid rgb(255, 127, 253);
+}
+/*Styled and animated the name title on home page, font color changes and text animates*/
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #f787ea;
+  --color-2: #3D8DAE;
+  --color-3: #f9d4d3;
+}
+
+.title-word-2 {
+  --color-1: aquamarine;
+  --color-2: #ACCFCB;
+  --color-3: #44b3bb;
+}
+
+/*Name animation*/
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+/*footer customised*/
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: aquamarine;
+}
+/*social media icons styled and spaced apart by padding right*/
+footer a {
+  color: aquamarine;
+  padding-right: 18px;
+  font-size: 25px;
+}
+/*social media icons hover*/
+footer a:hover {
+  color: aliceblue;
+}
+/******About******/
+.about p, h1{
+  color: rgb(253, 253, 254);
+}
+.about h1 {
+  font-size: 45px;
+  font-weight: 300;
+  color: aquamarine;
+}
+.about p{
+  font-size: 1.2em;
+}
+/****Customised the error 404 page****/
+.not-found{
+  color: rgb(253, 253, 254);
+  text-align: center;
+}
+.not-found a{
+  color: aquamarine;
+  border-bottom: 1px solid rgb(201, 201, 247);
+}
+/*Buttons customised and styled*/
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: aquamarine;
+  border-radius: 4px;
+  color: rgba(3, 2, 39, 0.84);
+  text-align: center;
+  box-shadow: 1px 4px 8px 0 rgb(255, 127, 253), 0 6px 15px 0 aquamarine;
+  cursor: pointer;
+}
+/*Button hover color added*/
+.btn:hover {
+   background-color: rgb(195, 132, 254);
+}
+/*Cards that display the projects styled and given a background color*/
+.card {
+  width: 28rem;
+  background-color: rgba(4, 2, 50, 0.84);
+  box-shadow: 1px 4px 8px 0 rgb(255, 127, 253), 0 6px 15px 0 aquamarine;
+}
+/*Images customised so that they fit the parent div without losing quality*/
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+/*Card text color changed*/
+.card-text, .card-title {
+  color: rgb(253, 253, 254);
+
+}
+/******Contact section******/
+.form-container {
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 1px 4px 8px 0 rgb(255, 127, 253), 0 6px 15px 0 aquamarine;
+}
+/*inout section font customised*/
+.form-container input, textarea {
+  width: 80%;
+  margin-left: 30px;
+  font-size: 18px;
+  color: rgb(23, 4, 41);
+  
+}
+/*form outline on click removed*/
+.form-container input, textarea:focus {
+  outline: none;
+}
+/*Input area width increased*/
+.form-container textarea {
+  width: 75%;
+}
+label {
+  margin-left: 30px;
+}
+/*Contact info moved to the bottom and given a different color*/
+.contacts {
+  margin-top: 90px;
+  display: block;
+  margin-left: 20px;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+
+/*Sources used include Hyperiondev notes, previous tasks, Geeksforgeeks, W3Schools, Alvarotrigo.com, You Tube, Google.com*/

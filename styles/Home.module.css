@@ -1,0 +1,147 @@
+/*Import Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Inspiration&family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400&family=Poppins:ital,wght@0,400;0,600;1,300;1,600;1,800&display=swap');
+
+.container {
+  padding: 0 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Name font cutomised and text changed to uppercase*/
+.name {
+ font-family: 'Alumni Sans Pinstripe', sans-serif;
+ margin-top: 0;
+ text-transform: uppercase;
+}
+/*Title description customised*/
+.text1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: -30px;
+}
+/*image section styled, given a box shadow*/
+.img {
+  border-radius: 50%;
+  box-shadow: 1px 4px 8px 0 rgb(255, 127, 253), 0 6px 15px 0 aquamarine;
+  opacity: 0.5;
+  transform: rotate(-25deg);
+}
+/*image animation on hover; image vibrates*/
+.img:hover {
+  animation: vibrate 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes vibrate {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(-1deg);}
+  20% {transform: rotate(1deg);}
+  30% {transform: rotate(0deg);}
+  40% {transform: rotate(1deg);}
+  50% {transform: rotate(-1deg);}
+  60% {transform: rotate(0deg);}
+  70% {transform: rotate(-1deg);}
+  80% {transform: rotate(1deg);}
+  90% {transform: rotate(0deg);}
+  100% {transform: rotate(-1deg);}
+}
+/*Button syled and customised*/
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 60px auto;
+  background: aquamarine;
+  border-radius: 4px;
+  color: rgba(3, 2, 39, 0.84);
+  text-align: center;
+  box-shadow: 1px 4px 8px 0 rgb(255, 127, 253), 0 6px 15px 0 aquamarine;;
+}
+/*Button hover*/
+.btn:hover {
+  background-color: rgb(195, 132, 254);
+}
+/*Styled the landing page background by using the leaves animation*/
+.leaf{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+/*Below are the different positions of the leaves and animation*/
+.leaf div:nth-child(1){
+  left:20%; 
+  animation:fall 15s linear infinite ;
+  animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+  left:70%; 
+  animation:fall 15s linear infinite ;
+  animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+  left:10%; 
+  animation:fall 20s linear infinite ;
+  animation-delay:-7s;
+  
+}
+.leaf div:nth-child(4){
+  left:50%; 
+ animation:fall 18s linear infinite ; 
+ animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+  left:85%; 
+  animation:fall 14s linear infinite ;
+  animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+  left:15%; 
+  animation:fall 16s linear infinite ;
+  animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+  left:90%; 
+  animation:fall 15s linear infinite ;
+  animation-delay:-4s;
+}
+/*Leaves animation*/
+@keyframes fall{
+  0%{
+      opacity:1;
+      top:-10%;
+      transform:translateX (20px) rotate(0deg);
+  }
+  20%{
+      opacity:0.8;
+      transform:translateX (-20px) rotate(45deg);
+  }
+  40%{
+
+      transform:translateX (-20px) rotate(90deg);
+  }
+  60%{
+      
+     transform:translateX (-20px) rotate(135deg); 
+  }
+  80%{
+  
+      transform:translateX (-20px) rotate(180deg);
+  }
+  100%{
+      
+      top:110%;
+      transform:translateX (-20px) rotate(225deg);
+  }
+  }
+.leaf1{
+  transform: rotateX(180deg);
+}
+
+/*Sources used include Hyperiondev notes, previous tasks, Geeksforgeeks, W3Schools, Alvarotrigo.com, You Tube, Google.com*/

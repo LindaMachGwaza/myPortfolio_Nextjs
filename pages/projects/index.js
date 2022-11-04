@@ -95,6 +95,35 @@ const Projects = () => {
                 <a className="btn">See more</a>
               </Link>
             </div>
+            
+          </motion.div>
+        </div>
+        <div className="col">
+          {/*Used framer motion so that on hover of the cards the scale increases */}
+          <motion.div className="card" whileHover={{ scale: 1.1 }}>
+            <Image
+              src="/todo.png"
+              className="card-img-top"
+              alt="itunes app"
+              width={900}
+              height={600}
+            />
+            <div className="card-body">
+              <h5 className="card-title">
+                <FontAwesomeIcon icon={faNodeJs} />
+                ToDo with jwt auth
+              </h5>
+              <div className="card-text">
+                Fullstack app built using React and Express. <br /> <br />
+                Used context API and JWT. User can do full CRUD operations as well as mark a ToDo as completed.
+              </div>
+              <div className="card-text">
+                Only an authorised user can use or perform actions on the dashboard.
+              </div>
+              <Link href="https://todo-jwt-authorisation.herokuapp.com/">
+                <a className="btn">See more</a>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </motion.div>

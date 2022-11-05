@@ -13,6 +13,7 @@ const About = () => {
           content="nexjs, reactjs, fullstack, web development"
         />
       </Head>
+      
       <div className="about">
         <h1>About Me</h1>
         <p>

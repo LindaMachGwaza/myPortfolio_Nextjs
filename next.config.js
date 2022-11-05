@@ -4,7 +4,10 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['www.pngmart.com']
-}
+},
+env: {
+  NEXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
+},
  
 }
 
